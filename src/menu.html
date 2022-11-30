@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      .menu {
+        width: 100;
+        background-color: maroon;
+        overflow: auto;
+        position: fixed;
+        top: 0;
+      }
+      .menu a {
+        float: left;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .menu a:hover {
+        background-color: black;
+      }
+      @media screen and (
+        max-width: 800px){
+          /* .menu a{
+            float:none;
+            display:block;
+          } */
+      body {font-family: Arial, Helvetica, sans-serif;}
+          * {box-sizing: border-box;}
+          input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+          }
+          
+          input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+          
+          .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+          }
+          .container {
+            margin-top: 50px;
+          }
+          @media screen and (max-width: 900px){
+            .container{
+                margin-top: 300px;
+            }
+          }
+        }
+    </style>
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="./index.html"
+        ><i class="fas fa-home" styel="font-size:48px"></i>Home</a
+      >
+      <a href="./Product.html"
+        ><i class="fab fa-product-book" styel="font-size:48px"></i>Product</a
+      >
+      <a href="./dashboard.html"
+        ><i class="fa fa-dashboard" styel="font-size:48px"></i>Dashboard</a
+      >
+      <a href="./contact.html"
+        ><i class="fa fa-vard" styel="font-size:48px"></i>Contact</a
+      >
+    </div>
+    <!-- <div class="column">
+      <div class="card">
+        <img src="../image/mono.jpg" alt="Mike" style="width:30%">
+        <div class="container">
+          <h2>Mono</h2>
+          <p class="title">Ca Sĩ (ck em)</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>mono@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div> -->
+    </div>
+    <div class="container">
+      <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+      </form>
+      </div>
+  </body>
+</html>
